@@ -8,7 +8,7 @@ export default {
 }
 </script>
 <template>
-    <div nav-bar>
+    <div class="nav-bar">
         <ul>
             <li v-for="(item, index) in nav" :key="index">
                 <a href="">{{ item }}</a>

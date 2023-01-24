@@ -1,5 +1,16 @@
 <script>
 export default {
+    data() {
+        return {
+            link: [
+                'My Account',
+                'Checkout',
+                'Cart',
+                'Packages',
+                'Add Car',
+            ]
+        }
+    }
 
 }
 </script>
@@ -30,10 +41,9 @@ export default {
                 <h2> Join Our Newsletter </h2>
                 <p> Subscribe to be informed about our services and products.</p>
                 <input type="" placeholder="Your Email Address" class="text">
-                <input type="submit" value="Submit" class="submit">
-
-
+                <input type="submit" value="Subscribe &rarr;" class="submit">
             </div>
+
         </div>
 
     </footer>
@@ -52,6 +62,7 @@ footer {
         margin: 20px auto;
         padding: 50px 0;
         display: flex;
+        justify-content: space-between;
 
         .socials {
             color: white;
@@ -87,8 +98,8 @@ footer {
             width: 100%;
             background-color: $white;
             color: $grey;
-            padding: 14px 20px;
-            margin: 8px 0;
+            padding: 20px 20px;
+            margin: 2px 0;
             border: none;
             border-radius: 4px;
             cursor: pointer;
@@ -96,8 +107,8 @@ footer {
 
         .text {
             width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
+            padding: 20px 20px;
+            margin: 2px 0;
             display: inline-block;
             border: 1px solid #ccc;
             border-radius: 4px;
