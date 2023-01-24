@@ -29,6 +29,7 @@ ul {
 
     li {
         padding: 10px;
+        margin-top: 10px;
     }
 }
 
@@ -36,5 +37,7 @@ a {
     color: $black;
     text-decoration: none;
     font-size: large;
+    font-size: 17px;
+    font-weight: 700;
 }
 </style>
