@@ -67,6 +67,9 @@ export default {
             <div>
                 <AppLiFooter :footerLink="footerLink" />
             </div>
+        </div>
+        <div class="copyright">
+            <p>&#169;2022 Autocar - All Rights Reserved. </p>
 
         </div>
 
@@ -138,6 +141,14 @@ footer {
             border-radius: 4px;
             box-sizing: border-box;
         }
+    }
+
+    .copyright {
+        width: 15%;
+        color: $white;
+        margin: 0 auto;
+        padding: 10px 0;
+
     }
 }
 </style>
