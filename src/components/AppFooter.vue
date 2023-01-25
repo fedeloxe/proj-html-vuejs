@@ -1,13 +1,34 @@
 <script>
+import AppLiFooter from './AppLiFooter.vue';
+
 export default {
+    components: {
+        AppLiFooter,
+    },
     data() {
         return {
-            link: [
-                'My Account',
-                'Checkout',
-                'Cart',
-                'Packages',
-                'Add Car',
+            footerLink: [
+                {
+                    title: 'My Account',
+                    content: [
+                        `<a href=""> My Account </a>`,
+                        `<a href=""> Checkout </a>`,
+                        `<a href=""> Cart </a>`,
+                        `<a href=""> Packages </a>`,
+                        `<a href=""> Add Car </a>`,
+
+                    ]
+                },
+                {
+                    title: 'Quick Links',
+                    content: [
+                        `<a href=""> Home</a>`,
+                        `<a href=""> About Us</a>`,
+                        `<a href=""> Blog</a>`,
+                        `<a href=""> Contact</a>`,
+                        `<a href=""> Refound & Returns</a>`,
+                    ]
+                }
             ]
         }
     }
@@ -42,6 +63,9 @@ export default {
                 <p> Subscribe to be informed about our services and products.</p>
                 <input type="" placeholder="Your Email Address" class="text">
                 <input type="submit" value="Subscribe &rarr;" class="submit">
+            </div>
+            <div>
+                <AppLiFooter :footerLink="footerLink" />
             </div>
 
         </div>

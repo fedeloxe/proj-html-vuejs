@@ -1,6 +1,6 @@
 <script>
-
 import AppNav from './AppNav.vue';
+
 export default {
     components: {
         AppNav,
@@ -23,11 +23,11 @@ export default {
 <template>
     <header>
         <div class="cont">
-            <div class="logo">
+            <div class="logo"> <!--logo-->
                 <img src="../assets/logo-autocar11.png" alt="logo">
             </div>
-            <AppNav :nav="nav" />
-            <div class="header-buttons">
+            <AppNav :nav="nav" /> <!--NavBar-->
+            <div class="header-buttons"> <!--Buttons-->
                 <a href="#" class="button-h">
                     <img src="../assets/padlock.png" alt="#">
                     My Account
@@ -36,6 +36,7 @@ export default {
                     <img src="../assets/add.png" alt="#">
                     Add Car
                 </a>
+                <!--offcanvas-->
                 <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
                     aria-controls="offcanvasExample">
                     <i class="fa-solid fa-bars"></i>
@@ -48,7 +49,7 @@ export default {
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <!--contenuto -->
+                        <!--contenuto offcanvas -->
                     </div>
                 </div>
 
