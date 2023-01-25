@@ -42,7 +42,7 @@ export default {
                     <i class="fa-solid fa-bars"></i>
                 </button>
 
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                <div class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvasExample"
                     aria-labelledby="offcanvasExampleLabel">
                     <div class="offcanvas-header">
 
@@ -59,6 +59,7 @@ export default {
                 </a>
             </div>
         </div>
+        <div></div> <!--linea nera sotto l'header-->
     </header>
 
 </template>
@@ -70,7 +71,9 @@ export default {
 
 header {
     width: 100%;
-    // position: fixed;
+    position: fixed;
+    z-index: 3;
+    background-color: $white;
 }
 
 .cont {
