@@ -3,12 +3,14 @@
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue'
 import AppCarousel from './components/AppCarousel.vue';
+import AppSearchCar from './components/AppSearchCar.vue';
 
 export default {
   components: {
     AppHeader,
     AppFooter,
-    AppCarousel
+    AppCarousel,
+    AppSearchCar,
   }
 }
 
@@ -17,6 +19,7 @@ export default {
 <template>
   <AppHeader />
   <AppCarousel />
+  <AppSearchCar />
   <AppFooter />
 </template>
 

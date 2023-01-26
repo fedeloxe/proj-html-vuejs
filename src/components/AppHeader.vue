@@ -59,7 +59,7 @@ export default {
                 </a>
             </div>
         </div>
-        <div></div> <!--linea nera sotto l'header-->
+        <div class="line"></div> <!--linea nera sotto l'header-->
     </header>
 
 </template>
@@ -74,6 +74,12 @@ header {
     position: fixed;
     z-index: 3;
     background-color: $white;
+}
+
+.line {
+    width: 100%;
+    height: 20px;
+    background-color: $black;
 }
 
 .cont {

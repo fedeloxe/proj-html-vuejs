@@ -11,3 +11,21 @@
     box-sizing: border-box;
     font-family: 'Satoshi', sans-serif;
 }
+
+/* ===== Scrollbar CSS ===== */
+
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 0px;
+    border: 1px none #ffffff;
+}

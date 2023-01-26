@@ -92,7 +92,7 @@ footer {
         justify-content: space-between;
 
         .socials {
-            color: white;
+            color: $white;
 
             .social {
                 display: flex;

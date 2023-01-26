@@ -51,7 +51,7 @@ export default {
 };
 </script>
 <template lang="">
-    <div class="padding">
+    <div class="carousel padding">
         <div class="container-fluid p-0">
           <div class="slider-wrapper">
             <div class="item">
@@ -70,7 +70,6 @@ export default {
             <div class="next" @click="next">❯</div>
           </div>
         </div>
-
     </div>
 </template>
 <style lang="scss" scoped>
@@ -81,14 +80,8 @@ export default {
     padding-top: 100px;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .item {
-    float: left;
+
     width: 100%;
     height: 80vh;
     position: relative;
@@ -100,7 +93,7 @@ export default {
     object-fit: cover;
 }
 
-.item .text {
+.text {
     position: absolute;
     top: 45%;
     left: 30%;
@@ -130,7 +123,7 @@ export default {
     font-size: 30px;
     padding: 10px 20px;
     position: absolute;
-    top: 45%;
+    top: 40%;
     transform: translate(-50%, -50%);
     cursor: pointer;
     z-index: 2;
