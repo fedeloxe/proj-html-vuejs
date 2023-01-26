@@ -53,9 +53,9 @@ export default {
                     <span>example@example.com</span>
                 </div>
                 <div class="social-icons">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
             <div class="newsletter">
@@ -111,8 +111,12 @@ footer {
             }
 
             .social-icons {
-                i {
-                    padding: 0 20px;
+                a {
+
+                    i {
+                        padding: 0 20px;
+                        color: $white;
+                    }
                 }
             }
         }

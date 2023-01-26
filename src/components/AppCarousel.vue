@@ -83,7 +83,7 @@ export default {
 .item {
 
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     position: relative;
 }
 

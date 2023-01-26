@@ -1,5 +1,10 @@
 <script>
+import AppCategories from './AppCategories.vue';
+
 export default {
+    components: {
+        AppCategories,
+    },
     data() {
         return {
             array: {
@@ -68,24 +73,16 @@ export default {
             </select>
         </div> -->
 
-        <div class="select">
+        <div class="select"> <!--funzione per le categorie della ricerca-->
             <select @change="('select')" v-for="(item, index ) in array" :key="index">
-
                 <option v-for="(item, index) in item" :key="index" :value="item">{{ item }}
                 </option>
-
             </select>
-
-
         </div>
-
-
         <button class="btn">Search</button>
-
-
-
     </div>
 
+    <AppCategories />
 
 
 </template>
